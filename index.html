@@ -8,10 +8,95 @@
 
         <link rel="stylesheet" href="css/bootstrap.min.css" >
         <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <div class="container">
+            <div class="jumbotron mt">
+                <h1>ElasticLib</h1>
+                <p class="text-justify">
+                    ElasticLib is a digital library. It enables you to store, retrieve and synchronize all your
+                    documents, music, pictures, videos and more.
+                </p>
+            </div>
 
+            <section>
+                <p class="text-justify">
+                    The primary goal of ElasticLib is to simplify or even to get rid of the tedious tasks associated
+                    with organizing your digital life, mainly:
+                </p>
+
+                <ul>
+                    <li>Sorting files by folders</li>
+                    <li>Retrieving a given file</li>
+                    <li>Making backups</li>
+                </ul>
+
+                <p class="text-justify">
+                    ElasticLib lets you create repositories. Each repository is a place where you can store any type of
+                    content. All files in a repository are automatically sorted and indexed, which means that:
+                </p>
+
+                <ul>
+                    <li>
+                        You no longer have to sort your files by folders, just put them in a repository.
+                    </li>
+                    <li>
+                        You can search and retrieve files by keywords, like you would do with a search engine on the web.
+                    </li>
+                </ul>
+
+                <p class="text-justify">
+                    Concerning this latter point, metadata is automatically extracted from each file stored in a
+                    repository.
+                </p>
+
+                <ul>
+                    <li>
+                        For an audio file, it could be the author, title, album...
+                    </li>
+                    <li>
+                        For a photo, the date on which it was taken, its format and size.
+                    </li>
+                    <li>
+                        Content is also extracted from readable files like PDFs or flat text ones.
+                    </li>
+                </ul>
+
+                <p class="text-justify">
+                    All collected metadata is stored along with associated file in the repository and indexed in an
+                    embedded search engine, so you can find files by searching on metadata or text content. Metadata
+                    is also freely modifiable, in order to enable you to enhance or correct information about a given
+                    file.
+                </p>
+
+                <p class="text-justify">
+                    Instead of having to make backups of your files, elasticLib lets you synchronize repositories.
+                    You just have to set up a replication between two repositories and any past or future change on one
+                    of them will eventually be propagated to the other. To be more precise, replications can be:
+                </p>
+
+                <ul>
+                    <li>Unidirectional, meaning that changes are only propagated one way.</li>
+                    <li>Bidirectional, meaning that changes are propagated both ways.</li>
+                </ul>
+
+                <p class="text-justify">
+                    The repositories are managed by nodes. A node runs on a given computer and lets you:
+                </p>
+
+                <ul>
+                    <li>Create repositories on this computer.</li>
+                    <li>Put or delete files in any repository managed by this node, and edit associated metadata.</li>
+                    <li>Search and retrieve files in a given repository.</li>
+                    <li>Set up replications between repositories of this node or those of remote nodes on other computers.</li>
+                </ul>
+
+                <p class="text-justify">
+                    In order to accomplish that, each node expose a RESTful API. A command-line interface enables you
+                    to interact with this API. A web-based interface is also planned.
+                </p>
+            </section>
         </div>
 
         <script src="js/jquery.min.js"></script>
