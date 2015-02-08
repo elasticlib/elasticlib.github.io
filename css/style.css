@@ -24,3 +24,9 @@
     font-size: 16px;
     max-width: 1000px;
 }
+
+footer{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 12px;
+}
